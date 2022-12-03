@@ -6,10 +6,8 @@ value_lookup = {}
 def create_lookup_dict():
     for i in range(0, 26):
         value_lookup[chr(ord('a') + i)] = i + 1
-
-    for i in range(0, 26):
         value_lookup[chr(ord('A') + i )] = 27 + i
-
+        
 def open_file(file: str) -> str:
     with open(file, 'r') as fp:
         return fp.read().strip()
